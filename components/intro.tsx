@@ -48,18 +48,18 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Jozef.</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm Jozef.</span><br /> I'm a{" "}
         <span className="font-bold">QA engineer</span> with{" "}
         <span className="font-bold">5 years</span> of experience. I enjoy{" "}
-        <span className="italic"> testing & coding apps </span>
-        that <span className="underline">simplify the testing</span>. Or are
+        <span className="italic"> testing & automating it.</span><br />
+        I also build apps, that <span className="underline">simplify the testing</span>, or are
         just funny to make🙃
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
