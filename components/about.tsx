@@ -29,14 +29,14 @@ export default function About() {
         and tools (like Robot Framework, NodeJS, ReadyAPI).
       </p>
 
-      <p>
+      <p className="mb-3">
         <span className="italic">When I am not developing test automation</span>, I enjoy working
         on personal projects. Coding gives me <span className="underline">joy and sense of creative fullfilment</span>.
         I am really thankful, that I can do job like this for a living 👌
       </p>
 
       <p>
-        From other free time activities - I enjoy {" "}
+        From other free time activities -{" "} 
         <span className="font-medium">spending time with my family</span>, running in local park,
         playing video & board games or playing accordion and guitar.
       </p>

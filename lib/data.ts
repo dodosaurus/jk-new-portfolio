@@ -5,6 +5,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import chlebiatkoBlog from "@/public/chlebiatkoBlog.png"
+import minersReporter from "@/public/minersReporter.png"
+import gatsbyPortfolio from "@/public/gatsbyPortfolio.png"
 
 export const links = [
   {
@@ -62,25 +65,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Chlebiatko Blog",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Little blogging platform for hobby baker (my wife), with own admin mode to add/edit/delete blog posts.",
+    tags: ["React", "Bulma", "Firebase", "Redux", "Thunk"],
+    imageUrl: chlebiatkoBlog,
   },
   {
-    title: "rmtDev",
+    title: "2Miners Reporter",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Cryptomining reporting tool for my own needs. Server running on mining machine was regulary seeding data for frontend generated graphs.",
+    tags: ["React", "Bulma", "Firebase", "NodeJS", "Axios"],
+    imageUrl: minersReporter,
   },
   {
-    title: "Word Analytics",
+    title: "First portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "My previous portfolio website, which I used to try new technologies, like static site generation and connection to CMS.",
+    tags: ["GatsbyJS", "Tailwind", "Contentful"],
+    imageUrl: gatsbyPortfolio,
   },
 ] as const;
 
