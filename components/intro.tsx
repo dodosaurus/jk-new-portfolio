@@ -31,20 +31,6 @@ export default function Intro() {
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
-
-          <motion.span
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-            className="absolute bottom-0 right-0 text-4xl"
-          >
-            👋
-          </motion.span>
         </div>
       </div>
 
@@ -73,24 +59,24 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contact me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
           href="/CV.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black-[0.3rem]"
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
           href="https://www.linkedin.com/in/kovacjozef" target='_blank'
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-linkedin active:scale-105 transition cursor-pointer"
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-linkedin active:scale-105 transition cursor-pointer border border-black-[0.3rem]"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/dodosaurus" target='_blank'
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-github active:scale-105 transition cursor-pointer"
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-github active:scale-105 transition cursor-pointer border border-black-[0.3rem]"
         >
           <FaGithubSquare />
         </a>
