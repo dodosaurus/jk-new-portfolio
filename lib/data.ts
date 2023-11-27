@@ -1,10 +1,10 @@
 import React from "react";
+import { LuLeaf } from "react-icons/lu";
+import { MdOutlineScience } from "react-icons/md";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import chlebiatkoBlog from "@/public/chlebiatkoBlog.png"
-import minersReporter from "@/public/minersReporter.png"
-import gatsbyPortfolio from "@/public/gatsbyPortfolio.png"
+import chlebiatkoBlog from "@/public/chlebiatkoBlog.png";
+import minersReporter from "@/public/minersReporter.png";
+import gatsbyPortfolio from "@/public/gatsbyPortfolio.png";
 
 export const links = [
   {
@@ -35,28 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Pharmacy and science",
+    location: "Košice (SK)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "After graduation, I worked as retail pharmacist. Besides my daily duties, I worked on PharmD scientific thesis (with Immunology department, UVLF Košice).",
+    icon: React.createElement(MdOutlineScience),
+    date: "2016 - 2018",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "QA engineer",
+    location: "Košice (SK) & Dortmund (DE)",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Outsourced from FPT Slovakia to Compleo Charging Solutions. Green project, where I was focused on test automation, enhancing it, developing more and more quality test suites. Started with Micro Focus UFT, then migrating to Cypress.",
+    icon: React.createElement(LuLeaf),
+    date: "2018 - 2022",
+  },
+  {
+    title: "QA engineer",
+    location: "Košice (SK) & Sydney (AU)",
+    description:
+      "Outsourced from Hotovo to Protecht. Complex risk managment software, focusing on test automation with Robot Framework, developing testing tools with Node.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - present",
   },
 ] as const;
 
@@ -72,36 +72,35 @@ export const projectsData = [
     title: "2Miners Reporter",
     description:
       "Cryptomining reporting tool for my own needs. Server running on mining machine was regulary seeding data for frontend generated graphs.",
-    tags: ["React", "Bulma", "Firebase", "NodeJS", "Axios"],
+    tags: ["React", "Bulma", "Firebase", "Node", "Axios"],
     imageUrl: minersReporter,
   },
   {
     title: "First portfolio",
     description:
       "My previous portfolio website, which I used to try new technologies, like static site generation and connection to CMS.",
-    tags: ["GatsbyJS", "Tailwind", "Contentful"],
+    tags: ["Gatsby", "Tailwind", "Contentful"],
     imageUrl: gatsbyPortfolio,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "Cypress",
+  "REST API",
+  "Node",
+  "Micro Focus UFT & ALM",
+  "Robot Framework",
   "Python",
-  "Django",
-  "Framer Motion",
+  "Postman",
+  "MySQL",
+  "Git",
+  "HTML",
+  "CSS",
+  "React",
+  "Next",
+  "Gatsby",
+  "Tailwind",
+  "Bulma",
 ] as const;
