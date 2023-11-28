@@ -84,6 +84,7 @@ export default function Intro() {
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
+
         <a
           href="https://www.linkedin.com/in/kovacjozef"
           target="_blank"
