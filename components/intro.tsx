@@ -37,7 +37,7 @@ export default function Intro() {
               width={192}
               height={192}
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-gray-900"
             />
           </motion.div>
         </div>
@@ -79,7 +79,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -87,14 +87,14 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/kovacjozef"
           target="_blank"
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-linkedin active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-linkedin active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-linkedin"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/dodosaurus"
           target="_blank"
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-github active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-github active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-github"
         >
           <FaGithubSquare />
         </a>

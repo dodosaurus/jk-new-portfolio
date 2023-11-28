@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "QA engineer",
     location: "Košice (SK) & Sydney (AU)",
     description:
-      "Outsourced from Hotovo to Protecht. Complex risk managment software, focusing on test automation with Robot Framework, developing testing tools with Node.",
+      "Outsourced from Hotovo to Protecht. Complex risk managment software, focusing on test automation with Robot Framework, developing testing tools with Node and Next.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
