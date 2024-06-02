@@ -16,11 +16,7 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="mb-28 max-w-[50rem] text-center scroll-mt-[100rem]"
-    >
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -49,12 +45,10 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Jozef.</span>
-        <br /> I'm a <span className="font-bold">QA engineer</span> with{" "}
-        <span className="font-bold">5 years</span> of experience. I enjoy{" "}
-        <span className="italic"> testing & automating it.</span>
-        <br />I also build apps, that{" "}
-        <span className="underline">simplify the testing</span>, or are just
-        funny to make🙃
+        <br /> I'm a <span className="font-bold">QA engineer</span> with <span className="font-bold">6 years</span> of
+        experience. I enjoy working on <span className="italic"> test automation.</span>
+        <br />I also build apps, that <span className="underline">simplify the testing process</span>, or are just funny
+        to make 🙃
       </motion.h1>
 
       <motion.div
@@ -73,16 +67,14 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contact me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
           href="/CV.pdf"
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
