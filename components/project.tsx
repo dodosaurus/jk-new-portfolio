@@ -52,7 +52,7 @@ export default function Project({
               </a>
             )}
             
-            <span className="text-sm font-medium bg-black/10 px-2 py-1 rounded-md dark:bg-white/20 w-fit">
+            <span className="text-sm font-medium bg-black/10 px-2 py-1 mb-2 rounded-md dark:bg-white/20 w-fit">
               {year}
             </span>
           </div>
