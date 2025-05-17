@@ -29,7 +29,7 @@ export default function About() {
         of skillful people. I learnt so much, especially about testing. After 4
         years of experience with tools like Micro Focus UFT, ALM, Postman,
         SoapUI, and most of all with <span className="italic">Cypress</span>, I
-        decided to move on. Currently I am happily working on same position, but
+        decided to move on. Currently I am happily working on similar position, but
         in different setting and tools (like Robot Framework, NodeJS, ReadyAPI).
       </p>
 
@@ -41,10 +41,9 @@ export default function About() {
       </p>
 
       <p>
-        From other free time activities -{" "}
-        <span className="font-medium">spending time with my family</span>,
-        running in local park, playing video & board games or playing accordion
-        and guitar.
+        In my free time I like to{" "}
+        <span className="font-medium">spend time with my family</span>,
+        run in local park, play video & board games.
       </p>
     </motion.section>
   );
