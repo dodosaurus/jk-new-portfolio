@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
@@ -10,10 +10,18 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useThemeContext } from "@/context/theme-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { theme, toggleTheme } = useThemeContext();
+  const [avatarSrc, setAvatarSrc] = useState("/dodo-programmer.png");
+  
+  // Sync avatar with theme on initial load and theme changes
+  useEffect(() => {
+    setAvatarSrc(theme === "dark" ? "/dodo-programmer.png" : "/dodo-pharmacist.png");
+  }, [theme]);
   
   const startDate = new Date('2018-08-01');
   const currentDate = new Date();
@@ -24,6 +32,12 @@ export default function Intro() {
   const totalMonths = yearsOfExperience * 12 + monthsOffset;
   const years = Math.floor(totalMonths / 12);
   const months = totalMonths % 12;
+
+  const handleAvatarClick = () => {
+    toggleTheme();
+  };
+
+  const isProgrammerMode = theme === "dark";
 
   return (
     <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center scroll-mt-[100rem]">
@@ -38,12 +52,16 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/dodo-monk.png"
+              src={avatarSrc}
               alt="Jozef portrait"
-              width={192}
-              height={192}
+              width={576}
+              height={576}
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-gray-900"
+              className="h-72 w-72 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-gray-900 cursor-pointer transition-all duration-300 hover:scale-105"
+              onClick={handleAvatarClick}
+              style={{ 
+                transition: "all 0.5s ease-in-out"
+              }}
             />
           </motion.div>
         </div>
@@ -54,11 +72,22 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Jozef.</span>
-        <br /> I'm a <span className="font-bold">QA Engineer</span> with <span className="font-bold whitespace-nowrap">{years} years {months > 0 && `and ${months} month${months > 1 ? 's' : ''}`}</span> of
-        experience. I enjoy working on <span className="italic"> test automation.</span>
-        <br />I also build apps, that <span className="underline">simplify the testing process</span>, or are just funny
-        to make 🙃
+        {isProgrammerMode ? (
+          <>
+            <span className="font-bold">Hello, I'm Jozef.</span>
+            <br /> I'm a <span className="font-bold">QA Engineer</span> with <span className="font-bold whitespace-nowrap">{years} years {months > 0 && `and ${months} month${months > 1 ? 's' : ''}`}</span> of
+            experience. I enjoy working on <span className="italic"> test automation.</span>
+            <br />I also build apps that <span className="underline">simplify the testing process</span>, or are just fun
+            to make 🙃
+          </>
+        ) : (
+          <>
+            <span className="font-bold">Hello, I'm Jozef.</span>
+            <br /> I'm a <span className="font-bold">Pharmacist</span> with a passion for <span className="italic">medicine</span> and{" "}
+            <span className="font-bold">patient care</span>.
+            <br />I enjoy helping people understand their medications and <span className="underline">improve their health outcomes</span> 💊
+          </>
+        )}
       </motion.h1>
 
       <motion.div
@@ -94,13 +123,16 @@ export default function Intro() {
         >
           <BsLinkedin />
         </a>
-        <a
-          href="https://github.com/dodosaurus"
-          target="_blank"
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-github active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-github"
-        >
-          <FaGithubSquare />
-        </a>
+        
+        {isProgrammerMode && (
+          <a
+            href="https://github.com/dodosaurus"
+            target="_blank"
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-github active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-github"
+          >
+            <FaGithubSquare />
+          </a>
+        )}
       </motion.div>
     </section>
   );
