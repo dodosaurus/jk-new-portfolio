@@ -29,7 +29,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/dodo-monk.png",
+        url: "/dodo-programmer.png",
         width: 800,
         height: 800,
         alt: "Jozef Kováč",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Jozef Kováč | QA Engineer & Test Automation Specialist",
     description: "QA Engineer with expertise in test automation, tool development, and quality assurance.",
-    images: ["/dodo-monk.png"],
+    images: ["/dodo-programmer.png"],
   },
   robots: {
     index: true,
