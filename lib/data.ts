@@ -2,6 +2,7 @@ import React from "react";
 import { LuLeaf } from "react-icons/lu";
 import { MdOutlineScience } from "react-icons/md";
 import { CgWorkAlt } from "react-icons/cg";
+import { LuBookMarked } from "react-icons/lu";
 import chlebiatkoBlog from "@/public/chlebiatkoBlog.png";
 import minersReporter from "@/public/minersReporter.png";
 import gatsbyPortfolio from "@/public/gatsbyPortfolio.png";
@@ -38,28 +39,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Pharmacist & Science",
+    title: "Pharmacist",
     location: "Košice (SK)",
     description:
-      "After graduation, I worked as retail pharmacist. Besides my daily duties, I worked on PharmD thesis (with Immunology department, UVLF Košice).",
+      "After graduation, I worked as retail pharmacist. In parallel with my daily job, I worked on PharmD thesis (with Immunology department, UVLF Košice).",
     icon: React.createElement(MdOutlineScience),
-    date: "2016 - 2018",
+    date: "06/2016 - 08/2018",
   },
   {
-    title: "QA engineer",
+    title: "Test Automation Engineer",
     location: "Košice (SK) & Dortmund (DE)",
     description:
-      "Outsourced from FPT Slovakia to Compleo Charging Solutions. Green project, where I was focused on test automation, enhancing it, developing more and more quality test suites. Started with Micro Focus UFT, then migrating to Cypress.",
+      "Outsourced from FPT Slovakia to Compleo Charging Solutions. Green project, where I was focused solely on API test automation (via Micro Focus UFT, later Cypress).",
     icon: React.createElement(LuLeaf),
-    date: "2018 - 2022",
+    date: "08/2018 - 11/2022",
   },
   {
-    title: "QA engineer",
+    title: "QA Engineer",
+    location: "Košice (SK)",
+    description:
+      "Outsourced from Hotovo. Testing (manual + automation) of AI agent app (with RAG, own frontend) for legal company. Great short, rapid-paced, startup-like development experience.",
+    icon: React.createElement(LuBookMarked),
+    date: "03/2025 - 05/2025",
+  },
+  {
+    title: "Test Solutions Engineer",
     location: "Košice (SK) & Sydney (AU)",
     description:
-      "Outsourced from Hotovo to Protecht. Complex risk managment software, focusing on test automation with Robot Framework, developing testing tools with Node and NextJS.",
+      "Outsourced from Hotovo to Protecht. Complex risk managment software, focusing on API test automation with Robot Framework, but also developing testing tools (Node and NextJS).",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - present",
+    date: "11/2022 - present",
   },
 ] as const;
 
@@ -85,7 +94,7 @@ export const projectsData = [
   {
     title: "2Miners Reporter",
     description:
-      "Cryptomining reporting tool for my own needs. Server running on mining machine was regulary seeding data for frontend generated graphs.",
+      "Cryptomining reporting tool for my own needs. Server running on mining machine was regulary fetching data from 3rd party API and passing them to UI, where graphs were generated.",
     link: "no link available",
     tags: ["React", "Bulma", "Firebase", "Node", "Axios"],
     imageUrl: minersReporter,
@@ -94,7 +103,7 @@ export const projectsData = [
   {
     title: "Endurance Vault",
     description:
-      "Companion app for athletes on Strava, where your cycling/running activites are exchanged for in-app currency, that you can then spend on collectible cards.",
+      "Companion app for athletes on Strava, where your walking/cycling/running activites are exchanged for in-app currency, that you can then spend on collectible cards.",
     link: "no link available",
     tags: ["Next JS", "Tailwind", "ShadCN", "REST API", "Playwright"],
     imageUrl: enduranceVault,

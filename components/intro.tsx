@@ -55,7 +55,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Jozef.</span>
-        <br /> I'm a <span className="font-bold">software developer</span> with <span className="font-bold whitespace-nowrap">{years} years {months > 0 && `and ${months} month${months > 1 ? 's' : ''}`}</span> of
+        <br /> I'm a <span className="font-bold">QA Engineer</span> with <span className="font-bold whitespace-nowrap">{years} years {months > 0 && `and ${months} month${months > 1 ? 's' : ''}`}</span> of
         experience. I enjoy working on <span className="italic"> test automation.</span>
         <br />I also build apps, that <span className="underline">simplify the testing process</span>, or are just funny
         to make 🙃
