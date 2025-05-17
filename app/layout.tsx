@@ -10,8 +10,42 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Jozef Kováč | Personal Portfolio",
-  description: "Jozef is a QA engineer with 5 years of experience.",
+  title: "Jozef Kováč | QA Engineer & Test Automation Specialist",
+  description: "Jozef Kováč is a QA Engineer with 6+ years of experience in test automation, tool development, and quality assurance for web and mobile applications.",
+  keywords: ["QA Engineer", "Test Automation", "Playwright", "Cypress", "Robot Framework", "NextJS", "TypeScript", "Quality Assurance"],
+  authors: [{ name: "Jozef Kováč" }],
+  creator: "Jozef Kováč",
+  publisher: "Jozef Kováč",
+  metadataBase: new URL("https://jkovac.eu"),
+  alternates: {
+    canonical: "https://jkovac.eu",
+  },
+  openGraph: {
+    title: "Jozef Kováč | QA Engineer & Test Automation Specialist",
+    description: "QA Engineer with expertise in test automation, tool development, and quality assurance for web and mobile applications.",
+    url: "https://jkovac.eu",
+    siteName: "Jozef Kováč Portfolio",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/dodo-monk.png",
+        width: 800,
+        height: 800,
+        alt: "Jozef Kováč",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jozef Kováč | QA Engineer & Test Automation Specialist",
+    description: "QA Engineer with expertise in test automation, tool development, and quality assurance.",
+    images: ["/dodo-monk.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
