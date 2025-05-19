@@ -67,7 +67,7 @@ export default function RootLayout({
             {children}
             <Toaster position="bottom-center" />
             <Footer />
-            <ThemeSwitch />
+            {/* <ThemeSwitch /> */}
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
