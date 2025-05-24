@@ -1,6 +1,5 @@
 import React from "react";
 import { LuLeaf } from "react-icons/lu";
-import { MdOutlineScience } from "react-icons/md";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuBookMarked } from "react-icons/lu";
 import { FaBookMedical } from "react-icons/fa";
@@ -12,7 +11,7 @@ import { FaCapsules } from "react-icons/fa6";
 import chlebiatkoBlog from "@/public/chlebiatkoBlog.png";
 import minersReporter from "@/public/minersReporter.png";
 import gatsbyPortfolio from "@/public/gatsbyPortfolio.png";
-import enduranceVault from "@/public/enduranceVault.png";
+import enduranceLegends from "@/public/enduranceLegends.png";
 import metaxWeb from "@/public/metaxWeb.png";
 import metaxApp from "@/public/metaxApp.png";
 
@@ -129,12 +128,12 @@ export const projectsData = [
     year: 2023,
   },
   {
-    title: "Endurance Vault",
+    title: "Endurance Legends",
     description:
       "Companion app for athletes on Strava, where your walking/cycling/running activities are exchanged for in-app currency, that you can then spend on collectible cards.",
     link: "https://endurance-legends.vercel.app/",
     tags: ["Next JS", "Tailwind", "ShadCN", "REST API", "Playwright"],
-    imageUrl: enduranceVault,
+    imageUrl: enduranceLegends,
     year: 2024,
   },
   {
