@@ -16,11 +16,11 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { theme, toggleTheme } = useThemeContext();
-  const [avatarSrc, setAvatarSrc] = useState("/dodo-programmer.png");
+  const [avatarSrc, setAvatarSrc] = useState("/IMG_2677.jpg");
   
   // Sync avatar with theme on initial load and theme changes
   useEffect(() => {
-    setAvatarSrc(theme === "dark" ? "/dodo-programmer.png" : "/dodo-pharmacist.png");
+    setAvatarSrc(theme === "dark" ? "/IMG_2677.jpg" : "/dodo-pharmacist.png");
   }, [theme]);
   
   const startDate = new Date('2018-08-01');
