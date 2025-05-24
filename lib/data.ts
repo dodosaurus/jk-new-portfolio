@@ -132,7 +132,7 @@ export const projectsData = [
     title: "Endurance Vault",
     description:
       "Companion app for athletes on Strava, where your walking/cycling/running activities are exchanged for in-app currency, that you can then spend on collectible cards.",
-    link: "no link available",
+    link: "https://endurance-legends.vercel.app/",
     tags: ["Next JS", "Tailwind", "ShadCN", "REST API", "Playwright"],
     imageUrl: enduranceVault,
     year: 2024,
