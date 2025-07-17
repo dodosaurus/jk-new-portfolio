@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
@@ -10,6 +10,11 @@ import SubmitBtn from "./submit-btn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.5);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <motion.section
@@ -39,36 +44,45 @@ export default function Contact() {
         or through this form.
       </p>
 
-      <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+      {isClient ? (
+        <form
+          className="mt-10 flex flex-col dark:text-black"
+          action={async (formData) => {
+            const { data, error } = await sendEmail(formData);
 
-          if (error) {
-            toast.error(error);
-            return;
-          }
+            if (error) {
+              toast.error(error);
+              return;
+            }
 
-          toast.success("Email sent successfully!");
-        }}
-      >
-        <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="senderEmail"
-          type="email"
-          placeholder="Your email"
-          required
-          maxLength={500}
-        />
-        <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="message"
-          placeholder="Your message"
-          required
-          maxLength={5000}
-        />
-        <SubmitBtn />
-      </form>
+            toast.success("Email sent successfully!");
+          }}
+        >
+          <input
+            className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            name="senderEmail"
+            type="email"
+            placeholder="Your email"
+            required
+            maxLength={500}
+          />
+          <textarea
+            className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            name="message"
+            placeholder="Your message"
+            required
+            maxLength={5000}
+            defaultValue=""
+          />
+          <SubmitBtn />
+        </form>
+      ) : (
+        <div className="mt-10 flex flex-col">
+          <div className="h-14 px-4 rounded-lg borderBlack bg-gray-100 animate-pulse" />
+          <div className="h-52 my-3 rounded-lg borderBlack bg-gray-100 animate-pulse" />
+          <div className="h-12 rounded-lg bg-gray-100 animate-pulse" />
+        </div>
+      )}
     </motion.section>
   );
 }

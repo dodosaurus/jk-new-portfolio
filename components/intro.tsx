@@ -57,7 +57,7 @@ export default function Intro() {
               width={576}
               height={576}
               priority={true}
-              className="h-72 w-72 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-gray-900 transition-all duration-300 hover:scale-105"
+              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-gray-900 transition-all duration-300 hover:scale-105"
               // onClick={handleAvatarClick}
               // style={{ 
               //   transition: "all 0.5s ease-in-out"
