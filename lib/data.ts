@@ -80,7 +80,7 @@ export const experiencesData = [
     tag: "it",
   },
   {
-    title: "QA Engineer",
+    title: "Test Automation Engineer",
     location: "Košice (SK)",
     description:
       "Outsourced from Hotovo. Testing (manual + automation) of AI agent app (with RAG, own frontend) for legal company. A great short, rapid-paced, startup-like development experience.",
@@ -89,7 +89,7 @@ export const experiencesData = [
     tag: "it",
   },
   {
-    title: "QA Engineer",
+    title: "Test Automation Engineer",
     location: "Košice (SK) & Sydney (AU)",
     description:
       "Outsourced from Hotovo to Protecht. Complex risk management software, focusing on API test automation with Robot Framework and development of testing tools (NodeJS and NextJS).",
