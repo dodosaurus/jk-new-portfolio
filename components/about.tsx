@@ -30,7 +30,7 @@ export default function About() {
             After learning basics with Java, I switched to{" "}
             <span className="underline">JavaScript</span> and through making dozens
             of little projects, I fell in love with coding. I got my first job as{" "}
-            <span className="font-medium">QA engineer</span> on a great project full
+            <span className="font-medium">Test Automation Engineer</span> on a great project full
             of skillful people. I learned so much, especially about testing. After 4
             years of experience with tools like Micro Focus UFT, ALM, Postman,
             SoapUI, and most of all with <span className="italic">Cypress</span>, I
