@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['jkovac.eu'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'jkovac.eu',
+      },
+    ],
+    qualities: [75, 90],
   },
-  poweredByHeader: false, // Remove the X-Powered-By header for security
+  poweredByHeader: false,
 }
 
 module.exports = nextConfig
