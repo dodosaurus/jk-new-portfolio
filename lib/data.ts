@@ -14,6 +14,7 @@ import gatsbyPortfolio from "@/public/gatsbyPortfolio.png";
 import enduranceLegends from "@/public/enduranceLegends.png";
 import metaxWeb from "@/public/metaxWeb.png";
 import metaxApp from "@/public/metaxApp.png";
+import jmjSolution from "@/public/jmjSolution.png";
 
 export const links = [
   {
@@ -152,6 +153,15 @@ export const projectsData = [
     link: "no link available",
     tags: ["Expo", "React Native", "TypeScript"],
     imageUrl: metaxApp,
+    year: 2025,
+  },
+  {
+    title: "JMJ Solution (website)",
+    description:
+      "Website for a company that provides solutions for the construction industry.",
+    link: "https://jmjsolution.sk",
+    tags: ["Next JS", "Tailwind", "ShadCN", "Vercel"],
+    imageUrl: jmjSolution,
     year: 2025,
   },
 ] as const;

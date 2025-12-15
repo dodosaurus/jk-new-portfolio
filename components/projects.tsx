@@ -8,7 +8,7 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
-  const sortedProjects = [...projectsData].sort((a, b) => b.year - a.year);
+  const sortedProjects = [...projectsData].reverse();
 
   return (
     <section ref={ref} className="mb-28 scroll-mt-28" id="projects">
