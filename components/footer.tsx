@@ -4,11 +4,8 @@ export default function Footer() {
   return (
     <footer className="mb-10 px-4 text-center text-gray-500 ">
       <small className="mb-2 block text-xs">
-        &copy; {new Date().getFullYear()} Jozef. All rights reserved. Built with help of <a className="font-semibold" href="https://www.youtube.com/@ByteGrad">@ByteGrad</a>.
+        &copy; {new Date().getFullYear()} dodosaurus. All rights reserved. Built with help of <a className="font-semibold" href="https://www.youtube.com/@ByteGrad">@ByteGrad</a>.
       </small>
-      <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
-      </p>
     </footer>
   );
 }
