@@ -15,6 +15,7 @@ import enduranceLegends from "@/public/enduranceLegends.png";
 import metaxWeb from "@/public/metaxWeb.png";
 import metaxApp from "@/public/metaxApp.png";
 import jmjSolution from "@/public/jmjSolution.png";
+import dodoRecorder from "@/public/dodoRecorder.png";
 
 export const links = [
   {
@@ -163,6 +164,15 @@ export const projectsData = [
     tags: ["Next JS", "Tailwind", "ShadCN", "Vercel"],
     imageUrl: jmjSolution,
     year: 2025,
+  },
+  {
+    title: "Dodo Recorder",
+    description:
+      "AI-ready browser interaction recorder with local voice transcription for automated test generation. A desktop application for recording browser interactions and voice commentary, producing session bundles optimized for AI-assisted test generation.",
+    link: "https://github.com/dodosaurus/dodo-recorder",
+    tags: ["Electron", "TypeScript", "React", "Playwright", "Whisper", "Vite", "Tailwind"],
+    imageUrl: dodoRecorder,
+    year: 2026,
   },
 ] as const;
 
