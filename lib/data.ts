@@ -6,8 +6,6 @@ import { FaBookMedical } from "react-icons/fa";
 import { FaBook } from "react-icons/fa6";
 import { FaCapsules } from "react-icons/fa6";
 
-
-
 import chlebiatkoBlog from "@/public/chlebiatkoBlog.png";
 import minersReporter from "@/public/minersReporter.png";
 import gatsbyPortfolio from "@/public/gatsbyPortfolio.png";
@@ -48,8 +46,7 @@ export const experiencesData = [
   {
     title: "Mgr. (Pharmacy)",
     location: "Košice (SK)",
-    description:
-      "Graduated from Pharmacy at University of Veterinary Medicine and Pharmacy in Košice.",
+    description: "Graduated from Pharmacy at University of Veterinary Medicine and Pharmacy in Košice.",
     icon: React.createElement(FaBookMedical),
     date: "09/2010 - 06/2016",
     tag: "student",
@@ -158,8 +155,7 @@ export const projectsData = [
   },
   {
     title: "JMJ Solution (website)",
-    description:
-      "Website for a company that provides solutions for the construction industry.",
+    description: "Website for a company that provides solutions for the construction industry.",
     link: "https://jmjsolution.sk",
     tags: ["Next JS", "Tailwind", "ShadCN", "Vercel"],
     imageUrl: jmjSolution,
@@ -168,9 +164,9 @@ export const projectsData = [
   {
     title: "Dodo Recorder",
     description:
-      "AI-ready browser interaction recorder with local voice transcription for automated test generation. A desktop application for recording browser interactions and voice commentary, producing session bundles optimized for AI-assisted test generation.",
+      "AI-ready browser interaction recorder with local voice transcription, producing session bundles optimized for AI-assisted test generation.",
     link: "https://github.com/dodosaurus/dodo-recorder",
-    tags: ["Electron", "TypeScript", "React", "Playwright", "Whisper", "Vite", "Tailwind"],
+    tags: ["Electron", "TypeScript", "Playwright", "Whisper"],
     imageUrl: dodoRecorder,
     year: 2026,
   },
